@@ -1,0 +1,17 @@
+magick -size 320x85 canvas:none -font Bookman-DemiItalic -pointsize 72 \
+  -draw "text 25,60 \'Magick\'" -channel RGBA -blur 0x6 -fill darkred -stroke magenta \
+  -draw "text 20,55 \'Magick\'" fuzzy-magick.png
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  magick input.png -colorspace RGB +sigmoidal-contrast 11.6933 \
+  -define filter:filter=Sinc -define filter:window=Jinc -define filter:lobes=3 \
+  -resize 400% -sigmoidal-contrast 11.6933 -colorspace sRGB output.png');
+  
+  
