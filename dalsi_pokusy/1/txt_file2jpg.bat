@@ -34,12 +34,9 @@ del tux_2.jpg
 magick -font Courier-New -pointsize 16 TEXT:tux.txt tux_2.jpg
 
 
-
 REM -font $Font -pointsize $VelikostFontu
 REM convert -size $VelikostObrazku xc:$BarvaPozadi -font $Font -pointsize $VelikostFontu -fill $BarvaTextu -
 REM gravity center -draw "text 0,0 '$Napis'" $OutputImageFile
-
-
 
 
 sleep 1
