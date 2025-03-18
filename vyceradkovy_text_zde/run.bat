@@ -3,8 +3,9 @@
 REM echo https://imagemagick.org/script/download.php
 
 del *.jpg
+REM copy /v in.txt in_backup.txt
+REM copy /v run.bat run_backup.bat
 sleep 1
-
 
 REM C:\Program Files (x86)\ImageMagick-7.1.1-Q16\magick.exe -font Courier-New -pointsize 16 TEXT:in.txt out_1.jpg
 magick.exe -font Courier-New -pointsize 16 TEXT:in.txt out_1.jpg
@@ -27,10 +28,10 @@ set out=out_8.jpg
 REM set size=22
 set size=20
 
-set fill=magenta
+set fill=yellow
 REM set fill=cyan
 
-set background=darkgreen
+set background=black
 REM set background=black
 
 magick.exe -font Courier-New -pointsize %size% -fill %fill% -background %background% TEXT:%in% %out%
@@ -47,5 +48,5 @@ magick.exe -font Courier-New -pointsize 30 -fill %fill% -background %background%
 
 magick.exe -font Courier-New -pointsize 32 -fill %fill% -background %background% TEXT:%in% out_14.jpg
 
-pause
+sleep 1
 
